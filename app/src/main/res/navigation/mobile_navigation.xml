@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_send_message">
+
+    <fragment
+        android:id="@+id/nav_create_group"
+        android:name="com.example.grupmesajuygulamasi.ui.creategroup.CreateGroupFragment"
+        android:label="@string/menu_create_group"
+        tools:layout="@layout/fragment_create_group" />
+    <fragment
+        android:id="@+id/nav_add_member_to_group"
+        android:name="com.example.grupmesajuygulamasi.ui.addmembertogroup.AddMemberToGroupFragment"
+        android:label="@string/menu_add_member_to_group"
+        tools:layout="@layout/fragment_add_member_to_group" />
+    <fragment
+        android:id="@+id/nav_create_message"
+        android:name="com.example.grupmesajuygulamasi.ui.createmessage.CreateMessageFragment"
+        android:label="@string/menu_create_message"
+        tools:layout="@layout/fragment_create_message" />
+    <fragment
+        android:id="@+id/nav_send_message"
+        android:name="com.example.grupmesajuygulamasi.ui.sendmessage.SendMessageFragment"
+        android:label="@string/menu_send_message"
+        tools:layout="@layout/fragment_send_message" />
+</navigation>
